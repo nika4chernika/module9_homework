@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 400px;
+            font-style: serif;
+            font-size: 18px;
+        }
+ 
+        label {
+            font-style: serif;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+ 
+        .page-input,
+        .limit-input {
+            font-style: serif;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+ 
+        .request-button {
+            margin-top: 10px;
+            padding: 8px 10px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .result-content {
+            justify-content: start;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 60px;
+            column-gap: 20px;
+            padding-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="diapason-form">Введите два числа в диапазоне от 1 до 10 
+        <label for="page-number">Номер страницы:</label>
+        <input class="page-input" type="text" id="page" name="page-number">
+        
+        <label for="limit-number">Лимит:</label>
+        <input class="limit-input" type="text" id="limit" name="limit-number">
+        
+        <button class="request-button" type="button">Запрос</button>
+    </form>
+    <div class="result-content"></div>
+      
+    <script src="./Modul 9, ex 5.js"></script>
+</body>
+</html>
